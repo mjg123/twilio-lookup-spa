@@ -14,8 +14,6 @@ const LookupSpa = () => {
         event.preventDefault();
         setLoading(true);
 
-        console.log({phoneNumber, pageToken});
-
         fetch("/lookup", {
             method: "POST",
             headers: { "content-type": "application/json" },
