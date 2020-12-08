@@ -19,7 +19,11 @@ function LookupInput({
     return (
       <form onSubmit={handleSubmit}>
 
-        <label for="lookup-phonenumber">Phone number to look up:</label>
+        <label for="lookup-phonenumber">
+            Phone number to look up, in <a href="https://www.twilio.com/docs/glossary/what-e164">
+              E.164 format
+            </a>:
+        </label>
         <input
           id="lookup-phonenumber"
           value={phoneNumber}
